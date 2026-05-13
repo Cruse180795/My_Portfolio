@@ -1,15 +1,23 @@
 type Props = {
-  href: string;
   children: React.ReactNode;
-  onClick?: () => void
+  section: string;
+  setActiveSection: (section: string) => void;
+  closeMenu: () => void;
 }
 
-export default function MobileLink({ href, children, onClick }: Props) {
+export default function MobileLink({ children, section, setActiveSection, closeMenu }: Props) {
+
+  const handleClick = () => {
+    setActiveSection(section);
+    closeMenu();
+  }
+
+
   return (
-    <li className="border-2 px-4 py-2 shadow-md rounded-lg">
-      <a href={href} onClick={onClick}>
+    <li>
+      <button className="border-2 px-4 py-2 shadow-md rounded-lg" onClick={handleClick}>
         {children}
-      </a>
+      </button>
     </li>
   )
 }

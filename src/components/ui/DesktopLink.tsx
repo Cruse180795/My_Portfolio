@@ -1,14 +1,16 @@
 type Props = {
-  href: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
-export default function DesktopLink({ href, children }: Props) {
+export default function DesktopLink({ children, onClick }: Props) {
   return (
     <li>
-      <a href={href} className="text-xl transition-colors duration-500 ease-in-out hover:text-blue-500 focus-visible:outline-none focus-visible:text-blue-500">
+      <button
+        onClick={onClick}
+        className="text-xl transition-colors duration-500 ease-in-out hover:text-blue-500 focus-visible:outline-none focus-visible:text-blue-500">
         {children}
-      </a>
+      </button>
     </li>
   )
 }
