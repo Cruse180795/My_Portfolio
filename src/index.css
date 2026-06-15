@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+
+@theme {
+
+    /*Website Theme Colors*/
+    --color-primary: hsl(325.5 100% 73.7%);
+    --color-primary-content: hsl(60 27.3% 96.2%);
+
+    --color-secondary: hsl(264.7 89% 77.6%);
+    --color-secondary-content: hsl(264.2 45.8% 5.6%);
+
+    --color-accent: hsl(31 99.9% 71.2%);
+    --color-accent-content: hsl(28.5 67.2% 5.1%);
+
+    --color-neutral: hsl(229.5 14.8% 30%);
+    --color-neutral-content: hsl(228.5 6.9% 84.9%);
+
+    --color-base-100:hsl(231.4 14.8% 18.4%);
+    --color-base-200: hsl(231.4 15% 16.3%);
+    --color-base-300: hsl(231.4 15.9% 14.3%);
+    --color-base-content:hsl(60 27.3% 96.2%);
+
+    /*Heading font*/
+    --font-nunito: "Nunito";
+
+    /*Body font*/
+    --font-inter: "Inter";
+
+    /*Icon Colors*/
+    --color-react:hsl(192.47, 95.06%, 68.24%);
+    --color-laravel: hsl(6.48, 85.44%, 59.61%);
+    --color-tailwind: hsl(188.74, 94.5%, 42.75%);
+    --color-github: hsl(210, 12.24%, 19.22%);
+    --color-linkedin: hsl(210, 90.2%, 40%);
+}
+
+
+@font-face {
+	font-family: "Inter";
+	src: url('assets/fonts/Inter-VariableFont_wght.woff2') format('woff2');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url('assets/fonts/Nunito-VariableFont.woff2') format('woff2');
+	font-display: swap;
+	font-weight: 200 900;
+	font-style: normal;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-nunito);
+}
+
+body{
+    font-family: var(--font-inter);
+
+}

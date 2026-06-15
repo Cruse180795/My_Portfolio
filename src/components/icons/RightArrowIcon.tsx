@@ -1,0 +1,25 @@
+import type { IconProps } from '../../types';
+
+export default function RightArrowIcon({...props}: IconProps) {
+  return (
+    <svg
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+      >
+        <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+        <g
+          id="SVGRepo_tracerCarrier"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M8 6L8 2L10 2L16 8L10 14L8 14L8 10L-1.74845e-07 10L-3.01991e-07 6L8 6Z"
+            fill="currentColor"
+          />
+        </g>
+      </svg>
+  );
+}
