@@ -7,6 +7,9 @@ import GithubIcon from "../icons/GithubIcon";
 import HTML5Icon from "../icons/HTML5Icon";
 import CSSIcon from "../icons/CSSIcon";
 
+
+import AboutMeIllustration from "../../assets/images/AboutMeIllustration.webp";
+
 export default function AboutMeSection() {
   return (
     <section className="bg-linear-to-b from-base-300 to-base-100 mx-auto container px-4 py-8">
@@ -14,7 +17,15 @@ export default function AboutMeSection() {
       <div className="grid grid-cols-1  gap-8">
 
         {/** Image */}
-        <img src="src/assets/images/AboutMeIllustration.webp" alt="About Me Illustration" loading="lazy" className="rounded-lg border-[1.5px] border-primary"/>
+        <img
+          src={AboutMeIllustration}
+          alt="About Me Illustration"
+          width={600}
+          height={400}
+          loading="lazy"
+          decoding="async"
+          className="rounded-lg border-[1.5px] border-primary w-full h-auto"
+        />
 
         {/** Content */}
         <div className="space-y-6">
