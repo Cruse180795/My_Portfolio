@@ -24,7 +24,7 @@ export default function AboutMeSection() {
           height={400}
           loading="lazy"
           decoding="async"
-          className="rounded-lg border-[1.5px] border-primary w-full h-auto"
+          className="rounded-lg shadow-2xl w-full h-auto"
         />
 
         {/** Content */}
