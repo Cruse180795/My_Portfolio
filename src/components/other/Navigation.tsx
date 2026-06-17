@@ -39,10 +39,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
         </ul>
 
 
-
-
       </div>
-
 
     </nav>
   );
