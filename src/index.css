@@ -29,9 +29,6 @@
     --font-inter: "Inter";
 
     /*Icon Colors*/
-    --color-react:hsl(192.47, 95.06%, 68.24%);
-    --color-laravel: hsl(6.48, 85.44%, 59.61%);
-    --color-tailwind: hsl(188.74, 94.5%, 42.75%);
     --color-github: hsl(210, 12.24%, 19.22%);
     --color-linkedin: hsl(210, 90.2%, 40%);
 }
