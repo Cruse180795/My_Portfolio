@@ -13,9 +13,10 @@ export default function App() {
     <div className="flex flex-col">
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
 
-      <main className=" text-base-content flex-1">
+      <main className=" text-base-content flex-1 bg-base-200">
 
         <AboutMeSection />
+
 
       </main>
     </div>

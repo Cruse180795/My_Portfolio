@@ -31,7 +31,7 @@ export default function AboutMeSection() {
 
 
   return (
-    <section className="bg-linear-to-b from-base-300 to-base-100 mx-auto container px-4 py-8">
+    <section className="bg-linear-to-bl from-base-300 via-base-200 to-neutral px-4 py-8">
       {/** Grid container */}
       <div className="grid grid-cols-1  gap-8">
 
@@ -71,11 +71,11 @@ export default function AboutMeSection() {
 
           {/** Techstack and tools */}
 
-          <div className="space-y-4">
+          <div className="space-y-5">
 
             {/* Core Stack */}
-            <div className="space-y-2">
-              <h2 className="uppercase text-accent text-sm">Core Stack</h2>
+            <div className="space-y-2.5">
+              <h2 className="uppercase text-secondary text-sm">Core Stack</h2>
               <ul className="grid grid-cols-2 gap-4">
                 {coreStack.map((stack) => (
                   <SkillCard icon={stack.icon} label={stack.label} key={stack.label} />
@@ -83,11 +83,11 @@ export default function AboutMeSection() {
               </ul>
             </div>
 
-            <hr className="border-t-0 border-accent border"/>
+
 
             {/* Other Tools */}
-            <div className="space-y-1.5">
-              <h2 className="uppercase text-accent text-sm">Other Tools | languages</h2>
+            <div className="space-y-2.5">
+              <h2 className="uppercase text-secondary text-sm">Other Tools | languages</h2>
               <ul className="grid grid-cols-2 gap-4">
                 {otherTools.map((tool) => (
                   <SkillCard icon={tool.icon} label={tool.label} key={tool.label} />
@@ -97,9 +97,11 @@ export default function AboutMeSection() {
 
           </div>
 
+          <hr className="border-t-0 border-accent border"/>
+
           {/** Socials */}
-          <div className="flex flex-col gap-y-2  text-neutral-content lg:hidden">
-            <h2 className="uppercase text-accent text-sm">Follow Me Here:</h2>
+          <div className="flex flex-col gap-y-2.5 lg:hidden">
+            <h2 className="uppercase text-secondary text-xs">Contect with me:</h2>
             <div className="flex items-center gap-x-3">
               <a href="" aria-label="GitHub" className="p-2 rounded-lg transition duration-500 ease-in-out bg-github hover:-translate-y-0.5" target="_blank">
                 <GithubIcon className="size-5" />
