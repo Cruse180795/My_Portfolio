@@ -53,15 +53,16 @@ export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSect
           className="rounded-lg shadow-2xl w-full h-auto"
         />
 
-        {/** Content */}
         <div className="space-y-6">
 
+          {/** Section Header */}
           <header className="space-y-2 text-center">
             <p className="uppercase text-2xl">Welcome</p>
             <h2 className="text-4xl">I'm <span className="text-primary">Ryan Cruse</span></h2>
           </header>
 
-          {/** Description, location and status wrapper */}
+
+          {/** Section Content */}
           <div className="space-y-3 text-center font-light text-pretty">
             <p className="leading-relaxed">Full-stack developer building web applications with React, Laravel and TailwindCSS.</p>
 
@@ -75,9 +76,6 @@ export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSect
             </div>
           </div>
 
-
-          {/** Techstack and tools */}
-
           <div className="space-y-5">
 
             {/* Core Stack */}
@@ -89,20 +87,6 @@ export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSect
                 ))}
               </ul>
             </div>
-
-            <hr className="border-t-0 border-accent border"/>
-
-            {/** Socials */}
-            <div className="flex flex-col gap-y-2.5">
-              <h2 className="uppercase text-secondary text-xs">Contect with me:</h2>
-              <div className="flex items-center gap-x-3">
-                <a href={githubLink} aria-label="GitHub" className="p-2 rounded-lg transition duration-500 ease-in-out bg-github hover:-translate-y-0.5" target="_blank">
-                  <GithubIcon className="size-5" />
-                </a>
-                <a href={linkedinLink} aria-label="LinkedIn" className="p-2 rounded-lg transition duration-500 ease-in-out bg-linkedin hover:-translate-y-0.5" target="_blank">
-                  <LinkedinIcon className="size-5" />
-                </a>
-              </div>
 
             {/* Other Tools */}
             <div className="space-y-2.5">
@@ -131,9 +115,10 @@ export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSect
             </div>
           </div>
 
-          </div>
         </div>
+
       </div>
+      {/** End of Grid container */}
 
     </section>
   );
