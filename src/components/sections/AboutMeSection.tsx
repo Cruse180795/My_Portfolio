@@ -38,8 +38,9 @@ export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSect
 
   return (
     <section className="bg-linear-to-bl from-base-300 via-base-200 to-neutral px-4 py-8">
+
       {/** Grid container */}
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
 
         {/** Image */}
         <img
@@ -89,7 +90,19 @@ export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSect
               </ul>
             </div>
 
+            <hr className="border-t-0 border-accent border"/>
 
+            {/** Socials */}
+            <div className="flex flex-col gap-y-2.5">
+              <h2 className="uppercase text-secondary text-xs">Contect with me:</h2>
+              <div className="flex items-center gap-x-3">
+                <a href={githubLink} aria-label="GitHub" className="p-2 rounded-lg transition duration-500 ease-in-out bg-github hover:-translate-y-0.5" target="_blank">
+                  <GithubIcon className="size-5" />
+                </a>
+                <a href={linkedinLink} aria-label="LinkedIn" className="p-2 rounded-lg transition duration-500 ease-in-out bg-linkedin hover:-translate-y-0.5" target="_blank">
+                  <LinkedinIcon className="size-5" />
+                </a>
+              </div>
 
             {/* Other Tools */}
             <div className="space-y-2.5">
@@ -116,15 +129,12 @@ export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSect
                 <LinkedinIcon className="size-5" />
               </a>
             </div>
-
           </div>
 
+          </div>
         </div>
-
-
-
-
       </div>
+
     </section>
   );
 }
