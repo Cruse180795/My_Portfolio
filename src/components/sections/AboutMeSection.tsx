@@ -14,7 +14,13 @@ import SkillCard from "../ui/SkillCard";
 
 import AboutMeIllustration from "../../assets/images/AboutMeIllustration.webp";
 
-export default function AboutMeSection() {
+type AboutMeSectionProps = {
+  githubLink: string;
+  linkedinLink: string;
+
+};
+
+export default function AboutMeSection({ githubLink, linkedinLink }: AboutMeSectionProps) {
 
   const coreStack = [
     { icon: ReactIcon, label: "React"},
@@ -33,7 +39,7 @@ export default function AboutMeSection() {
   return (
     <section className="bg-linear-to-bl from-base-300 via-base-200 to-neutral px-4 py-8">
       {/** Grid container */}
-      <div className="grid grid-cols-1  gap-8">
+      <div className="grid grid-cols-1 gap-8">
 
         {/** Image */}
         <img
@@ -103,10 +109,10 @@ export default function AboutMeSection() {
           <div className="flex flex-col gap-y-2.5 lg:hidden">
             <h2 className="uppercase text-secondary text-xs">Contect with me:</h2>
             <div className="flex items-center gap-x-3">
-              <a href="" aria-label="GitHub" className="p-2 rounded-lg transition duration-500 ease-in-out bg-github hover:-translate-y-0.5" target="_blank">
+              <a href={githubLink} aria-label="GitHub" className="p-2 rounded-lg transition duration-500 ease-in-out bg-github hover:-translate-y-0.5" target="_blank">
                 <GithubIcon className="size-5" />
               </a>
-              <a href="" aria-label="LinkedIn" className="p-2 rounded-lg transition duration-500 ease-in-out bg-linkedin hover:-translate-y-0.5" target="_blank">
+              <a href={linkedinLink} aria-label="LinkedIn" className="p-2 rounded-lg transition duration-500 ease-in-out bg-linkedin hover:-translate-y-0.5" target="_blank">
                 <LinkedinIcon className="size-5" />
               </a>
             </div>

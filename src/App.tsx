@@ -1,11 +1,17 @@
 import Navigation from "./components/other/Navigation"
 import AboutMeSection from "./components/sections/AboutMeSection";
+import ContactMeSection  from "./components/sections/ContactMeSection";
+
 
 import { useState } from "react"
 
 
 
 export default function App() {
+
+  const githubLink = "";
+  const linkedinLink = "";
+  const mailtoLink = "ryancruse1807@hotmail.com"
 
   const [activeSection, setActiveSection] = useState("about");
 
@@ -15,7 +21,8 @@ export default function App() {
 
       <main className=" text-base-content flex-1 bg-base-200">
 
-        <AboutMeSection />
+        <AboutMeSection githubLink={githubLink} linkedinLink={linkedinLink} />
+        <ContactMeSection mailto={mailtoLink} />
 
 
       </main>
