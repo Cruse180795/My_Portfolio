@@ -1,6 +1,7 @@
 import Navigation from "./components/other/Navigation"
 import AboutMeSection from "./components/sections/AboutMeSection";
-import ContactMeSection  from "./components/sections/ContactMeSection";
+import ContactMeSection from "./components/sections/ContactMeSection";
+import Footer from "./components/other/Footer";
 
 
 import { useState } from "react"
@@ -26,6 +27,7 @@ export default function App() {
 
 
       </main>
+      <Footer githubLink={githubLink} linkedinLink={linkedinLink}/>
     </div>
 
 
