@@ -39,7 +39,7 @@ export default function App() {
       <main className=" text-base-content flex-1 bg-base-200">
         <AboutMeSection githubLink={githubLink} linkedinLink={linkedinLink} />
         <ProjectSection projects={projectTests}/>
-        <hr className="border-secondary w-1/2 mx-auto lg:hidden" />
+
         <ContactMeSection mailto={mailtoLink} />
       </main>
       <Footer githubLink={githubLink} linkedinLink={linkedinLink}/>

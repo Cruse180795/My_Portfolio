@@ -37,6 +37,8 @@ export default function ProjectSection({projects}: ProjectCardProps) {
 
       </ul>
 
+
+
     </section>
   );
 }
