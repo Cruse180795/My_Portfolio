@@ -20,6 +20,7 @@ const projectTests = [
     description: "A real-time weather application with location search, forecast cards, and responsive design.",
     techStack: ["React", "TailwindCSS", "OpenWeather API"],
     imageUrl: TestProjectOneImage,
+    status: "In Development",
     githubUrl: "",
     liveUrl: ""
   }

@@ -4,6 +4,7 @@ interface ProjectCardProps {
     description: string;
     techStack: string[];
     imageUrl: string;
+    status: string;
     githubUrl: string;
     liveUrl: string;
   };
@@ -16,13 +17,17 @@ import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <li className="border-base-100 shadow-xl border-2 rounded-lg p-4 space-y-4">
-      {/** Project Image */}
-      <img src={project.imageUrl} alt={project.title} className="rounded-lg border-neutral" />
+      <div className="relative">
+        {/** Project Image */}
+        <img src={project.imageUrl} alt={project.title} className="rounded-lg border-neutral" />
+         <p className="text-xs text-white absolute bottom-2 right-2 rounded-lg p-2 backdrop-blur-sm bg-white/20">{ project.status }</p>
+      </div>
 
       <div className="space-y-4">
         <div className="space-y-2">
           <h3 className="text-xl">{ project.title }</h3>
           <p className="leading-relaxed font-light text-pretty">{ project.description }</p>
+
         </div>
 
 

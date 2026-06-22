@@ -8,6 +8,7 @@ interface Project {
   description: string;
   techStack: string[];
   imageUrl: string;
+  status: string;
   githubUrl: string;
   liveUrl: string;
 }
